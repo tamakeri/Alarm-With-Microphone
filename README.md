@@ -17,3 +17,5 @@
 		---- write eşik to file without too much  haste
    removed cock and ball torture
 			
+------ new 
+added new means to explore  range of microphone
