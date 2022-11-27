@@ -22,11 +22,17 @@ p = pyaudio.PyAudio()
 WIDTH = 2
 RATE = int(p.get_default_input_device_info()['defaultSampleRate'])
 DEVICE = p.get_default_input_device_info()['index']
+file2 = open("bas.txt","r+") 
+global bot
+bot =(int(file2.read()))
+file2.close()
 rms = 0
 db = 0
 print("hold + or - to incrase/decrease thres hold")
 time.sleep(2)
 file1 = open("oku.txt","r+") 
+
+
 def callback(in_data, frame_count, time_info, status):
     global rms
     rms = audioop.rms(in_data, WIDTH) / 32767
@@ -74,7 +80,7 @@ setak(int(file1.read()))
 file1.close()
 while stream.is_active():
     if rms != 0.0:
-        db = 30 * log10(rms)
+        db = bot * log10(rms)
         #print(f"RMS: {rms} DB: {db}") 
         average[i] = db
         i = i+1
