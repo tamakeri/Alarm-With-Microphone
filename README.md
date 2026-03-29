@@ -1,6 +1,6 @@
  enhanced the thread//escape or exit from current thread
  
-  intruced the cock and ball torture
+
 	
    added 2 new file to cope with requirements
 	 
@@ -15,7 +15,7 @@
 		---- readablity
 		
 		---- write eşik to file without too much  haste
-   removed cock and ball torture
+   
 			
 ------ new 
 added new means to explore  range of microphone
